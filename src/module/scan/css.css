@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    width:100%;
+    height:100%;
+    display:block;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+body {
+    font-family: "Microsoft Yahei", "Arial";
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #4a4a4a;
+}
+ul,ol,li {
+    list-style: none;
+}
+img {
+    display: block;
+    border:none;
+}
+input,
+textarea {
+  font-size: 125%;
+  font-family: "Microsoft Yahei";
+  border: none;
+  outline: none;
+  -webkit-appearance:none;
+}
+input:focus {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-modify: read-write-plaintext-only;
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+textarea {
+  -webkit-appearance: none;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+    text-decoration: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+@media (min-width: 320px) {
+    body {
+        font-size: 13px;
+    }
+    .text {
+        padding: 1.5em 0;
+    }
+    .signpic {
+        width: 60%;
+    }
+}
+@media (min-width: 376px) {
+    body {
+        font-size: 15px;
+    }
+    .text {
+        padding: 1.8em 0;
+    }
+}
+@media (min-width: 376px) {
+    .signpic {
+        width: 50%;
+    }
+}
+.clear {
+    zoom: 1;
+}
+.clear:after {
+    clear: both;
+    content: '';
+    display: table;
+    height: 0;
+    line-height: 0;
+}
+.ngview {
+    width: 100%;
+    height: 100%;
+}
+/*pay.html*/
+.pay {
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    background: #EFEFEF;
+}
+.header {
+    width: 100%;
+    padding: 3vh 0;
+    background: #f0f0f0;
+}
+.hpic {
+    width: 17%;
+    max-height: 70px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.hpic img {
+    width: 100%;
+    max-height: 70px;
+    border-radius: 50%;
+}
+.mess {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+.name {
+    font-size: 110%;
+    line-height: 1.4em;
+    margin-top: 1vh;
+}
+.sname {
+    font-size: 86%;
+    line-height: 1.6em;
+}
+.price {
+    background: #fff;
+    padding: .8em 1.6em 1.2em 1.6em;
+}
+.plabel {
+    line-height: 1.8em;
+    font-size: 120%;
+}
+.extras {
+    margin-top: 1em;
+}
+.dlr,.money {
+    font-size: 240%;
+    color: #000;
+    width: 82%;
+}
+.buttons {
+    width: 86%;
+    margin: 0 auto;
+}
+.paynow {
+    background: #e5e5e5;
+    color: #9b9b9b;
+}
+.paynow.show {
+    display: block;
+}
+.paynow.active {
+    background: #7ed321;
+    color: #fff;
+}
+.login {
+    background: -webkit-linear-gradient(top,#ffdd24 0,#FEC900 100%);
+    background: -o-linear-gradient(top,#ffdd24 0,#FEC900 100%);
+    background: -ms-linear-gradient(top,#ffdd24 0,#FEC900 100%);
+    background: linear-gradient(to bottom,#ffdd24 0,#FEC900 100%);
+    color: #fff;
+}
+.login p {
+    display: inline-block;
+    background: url('../../assets/paymenthead.png') left top no-repeat;
+    padding-left: 3em;
+    background-size: 3.2em;
+    margin-left: -1.2em;
+}
+.paynow, .login {
+    /*display: block;*/
+    width: 100%;
+    height: 3.2em;
+    line-height: 3.2em;
+    text-align: center;
+    font-size: 100%;
+    border-radius: 3px;
+    border:none;
+    margin-top: .8em;
+    font-family: "Microsoft Yahei";
+}
+.discounts {
+    width: 86%;
+    margin: .8em auto 0 auto;
+}
+.dismess {
+    display: none;
+}
+.dismess.show {
+    display: block;
+}
+.discounts .left {
+    float: left;
+}
+.discounts .right {
+    float: right;
+}
+.man, .upay {
+    font-size: 90%;
+    padding-bottom: .4em;
+}
+.man {
+    color: #f60;
+    line-height: 2em;
+    border-bottom: 1px solid #e5e5e5;
+}
+.upay {
+    line-height: 4em;
+}
+.upay .pce {
+    font-size: 140%;
+    color: #f60;
+}
+.tit {
+    line-height: 2em;
+}
+
+.loginmodel {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.loginmask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+}
+.logininner {
+    width: 80%;
+    max-height: 24em;
+    background: #fff;
+    z-index: 999;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    margin-top: -12em;
+    border-radius: 14px;
+    padding: 5em 3% 3% 3%;
+}
+.phone {
+    position: relative;
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    border: 1px solid #b6b6b6;
+}
+.phone input {
+    width: 85%;
+    height: 100%;
+    padding: 0 .3em;
+}
+.phone_clear {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 3em;
+    text-align: center;
+}
+.phone_clear span {
+    font-size: 160%;
+    color: #999;
+}
+.pay_logo {
+    width: 7em;
+    height: 7em;
+    position: absolute;
+    top: -3em;
+    left: 50%;
+    margin-left: -3.5em;
+    background: #fff;
+    padding: .5em;
+    border-radius: 50%;
+}
+.pay_logo img {
+    width: 100%;
+}
+.code {
+    margin-top: .8em;
+}
+.code input {
+    width: 66%;
+    height: 3em;
+    font-size: 100%;
+    line-height: 3em;
+    border: 1px solid #b6b6b6;
+    float: left;
+    padding-left: 0.5em;
+}
+.sendercode {
+    width: 32%;
+    text-align: center;
+    float: left;
+    line-height: 3em;
+    background: #7ed321;
+    margin-left: 2%;
+    color: #fff;
+}
+.agreement {
+    margin-top: .8em;
+}
+.agreement span {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background: #7ed321;
+    color: #fff;
+    border-radius: 3px;
+    float: left;
+    margin-right: 5px;
+    text-align: center;
+}
+.agreement p {
+    font-size: 85%;
+    line-height: 1.5em;
+}
+.loginbtn {
+    width: 100%;
+    height: 3em;
+    background: #7ed321;
+    border-radius: 3em;
+    line-height: 3em;
+    text-align: center;
+    padding: 0;
+    color: #fff;
+    margin-top: .8em;
+}
+.loginbtn p {
+    width: 64%;
+    margin: 0 auto;
+    padding-left: 2.6em;
+    background: url("../../assets/paymenthead.png") no-repeat -.3em;
+    background-size: 3.2em;
+    text-align: left;
+}
+.topaynow {
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    background: #9b9b9b;
+    border-radius: 3em;
+    margin-top: 1em;
+    text-align: center;
+    color: #fff;
+}
+.closemodel {
+	right: -1em;
+	top: -1em;
+	border-radius: 50%
+}
+.closemodel, .phone_clear {
+	width: 3em;
+	position: absolute
+}
+.closemodel, .topaynow {
+	height: 3em;
+	line-height: 3em;
+	background: #9b9b9b;
+	color: #fff
+}
+.closemodel, .ilogin h2, .sucbutton, .topaynow {
+	text-align: center
+}
+.send1 {
+	background: #9b9b9b;
+	color: #fff;
+}

@@ -1,0 +1,78 @@
+*{ margin: 0; padding: 0; }
+body { font-family: "微软雅黑"; -webkit-tap-highlight-color:rgba(0,0,0,0); outline:none;}
+img {display: block; margin: 0; padding: 0; }
+input[type="button"], input[type="submit"], input[type="reset"] {
+  -webkit-appearance: none;
+}
+a,a:active,a:hover {
+  text-decoration: none;
+  outline:none;
+  blr:expression(this.onFocus=this.blur());
+  color: #333;
+}
+ol,ul,li {
+  list-style: none;
+}
+button {
+  outline: none;
+}
+textarea {  -webkit-appearance: none;}
+@media screen and (max-width: 375px){
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 640px){
+  body {
+    font-size: 16px;
+  }
+}
+
+.clear { zoom:1; }
+.clear:before,.clear:after { clear:both; content: ''; display: table; height: 0; }
+button,input,textarea {
+  outline:none;
+  font-family: "微软雅黑";
+}
+.brm {
+  background: #f0f0f0;
+}
+.brm-item-small {
+  font-size: 90%;
+}
+.brm-grey {
+  color: #999;
+}
+.brm-btm {
+  border-bottom: 1px solid #e5e5e5;
+}
+.brm-left {
+  float: left;
+}
+.brm-right {
+  float: right;
+}
+.bg-linear {
+  background: -moz-linear-gradient(top, #ff4c47 0%, #ff732d 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff4c47), color-stop(100%,#ff732d));
+  background: -webkit-linear-gradient(top, #ff4c47 0%,#ff732d 100%);
+  background: -o-linear-gradient(top, #ff4c47 0%,#ff732d 100%);
+  background: -ms-linear-gradient(top, #ff4c47 0%,#ff732d 100%);
+  background: linear-gradient(to bottom, #ff4c47 0%,#ff732d 100%);
+}
+.status-bg-linear{
+  background: -moz-linear-gradient(left, #fff 0%, #75dcf8 30%, #00aaee 100%);
+  background: -webkit-linear-gradient(left, #fff 0%, #75dcf8 30%, #00aaee 100%);
+  background: -o-linear-gradient(left, #fff 0%, #75dcf8 30%, #00aaee 100%);
+  background: -ms-linear-gradient(left, #fff 0%, #75dcf8 30%, #00aaee 100%);
+  background: linear-gradient(to right, #fff 0%, #75dcf8 30%, #00aaee 100%);
+}
+.mint-loadmore-top > span{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.mint-loadmore-top > span img {
+  width: 100%;
+}

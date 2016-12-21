@@ -1,0 +1,52 @@
+*{ margin: 0; padding: 0; }
+body { font-family: "Microsoft Yahei"; -webkit-tap-highlight-color:rgba(0,0,0,0); outline:none;}
+img {display: block; margin: 0; padding: 0; }
+input[type="button"], input[type="submit"], input[type="reset"] {
+  -webkit-appearance: none;
+}
+a,a:active,a:hover {
+  text-decoration: none;
+  outline:none;
+  blr:expression(this.onFocus=this.blur());
+}
+button {
+  outline: none;
+}
+textarea {  -webkit-appearance: none;}
+@media (min-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media (min-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (min-width: 414px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media (min-width: 415px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 640px) {
+  body {
+    font-size: 24px;
+  }
+}
+
+@media(min-width: 840px){
+  body {
+    font-size: 28px;
+  }
+}
+.clear { zoom:1; }
+.clear:before,.clear:after { clear:both; content: ''; display: table; height: 0; }
+button,input,textarea {
+  outline:none;
+}

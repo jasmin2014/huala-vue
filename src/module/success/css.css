@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    width:100%;
+    height:100%;
+    display:block;
+}
+body {
+    font-family: "Microsoft Yahei", "Arial";
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #4a4a4a;
+}
+ul,ol,li {
+    list-style: none;
+}
+img {
+    display: block;
+    border:none;
+}
+input,
+textarea {
+    font-size: 125%;
+    font-family: "Microsoft Yahei";
+    border: none;
+    outline: none;
+    -webkit-appearance:none;
+}
+input:focus {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-modify: read-write-plaintext-only;
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+a,
+a:active,
+a:hover,
+a:visited {
+    text-decoration: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+@media (min-width: 320px) {
+    body {
+        font-size: 13px;
+    }
+    .text {
+        padding: 1.5em 0;
+    }
+    .signpic {
+        width: 60%;
+    }
+}
+@media (min-width: 376px) {
+    body {
+        font-size: 15px;
+    }
+    .text {
+        padding: 1.8em 0;
+    }
+}
+@media (min-width: 376px) {
+    .signpic {
+        width: 50%;
+    }
+}
+.clear {
+    zoom: 1;
+}
+.clear:after {
+    clear: both;
+    content: '';
+    display: table;
+    height: 0;
+    line-height: 0;
+}
+.ngview {
+    width: 100%;
+    height: 100%;
+}
+/*success pay*/
+.successmodel {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1em 0;
+    background: -moz-linear-gradient(top, #ffdd24 0%, #ffcb05 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffdd24), color-stop(100%,#ffcb05));
+    background: -webkit-linear-gradient(top, #ffdd24 0%,#ffcb05 100%);
+    background: -o-linear-gradient(top, #ffdd24 0%,#ffcb05 100%);
+    background: -ms-linear-gradient(top, #ffdd24 0%,#ffcb05 100%);
+    background: linear-gradient(to bottom, #ffdd24 0%,#ffcb05 100%);
+}
+.sucinner {
+    width: 92%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    padding-bottom: 2em;
+}
+.sucinner.iheight {
+    height: auto;
+    padding-bottom: .8em;
+    margin-top: 1em;
+}
+.sucinner.iheight .ordermess {
+    border-bottom: none;
+}
+.sucbutton {
+    width: 92%;
+    margin: 1.5em auto;
+    height: 3.2em;
+    line-height: 3.2em;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+}
+.sucbutton.ibutton {
+    display: none;
+}
+.sucbutton span {
+    font-size: 120%;
+}
+.ilogin {
+    width: 92%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    padding-bottom: 1.5em;
+}
+.ilogin h2 {
+    text-align: center;
+    line-height: 4em;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 100%;
+    font-weight: normal;
+}
+.ilogininner {
+    width: 92%;
+    margin: 1em auto 0 auto;
+}
+.iloginleft {
+    width: 66%;
+    float: left;
+}
+.inputphone {
+    width: 100%;
+    height: 2.4em;
+    line-height: 2.4em;
+}
+.inputcode {
+    width: 54%;
+    height: 2.4em;
+    line-height: 2.4em;
+    margin-top: .6em;
+    float: left;
+}
+.inputphone input, .inputcode input{
+    border: 1px solid #e6e6e6;
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+}
+.isendercode {
+    width: 42%;
+    height: 2.4em;
+    line-height: 2.4em;
+    background: #7ed321;
+    float: left;
+    margin-top: .6em;
+    margin-left: 4%;
+    text-align: center;
+    color: #fff;
+}
+.iloginright {
+    width: 30%;
+    float: left;
+    text-align: center;
+    line-height: 5.4em;
+    height: 5.4em;
+    margin-left: 4%;
+    border-radius: 8px;
+    background: -webkit-linear-gradient(top,#ededed 0,#d9d9d9 100%);
+    background: -o-linear-gradient(top,#ededed 0,#d9d9d9 100%);
+    background: -ms-linear-gradient(top,#ededed 0,#d9d9d9 100%);
+    background: linear-gradient(to bottom,#ededed 0,#d9d9d9 100%);
+}
+.iloginbanner {
+    width: 92%;
+    margin: 1em auto 0 auto;
+}
+.iloginbanner img {
+    width: 100%;
+}
+.sellerlogo {
+    padding: 1.5em 0;
+    border-bottom: 1px solid #e6e6e6;
+    line-height: 4em;
+    height: 7em;
+}
+.slogoinr {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 4.8em;
+}
+.slogo {
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background: #d8d8d8;
+}
+.slogo img {
+    width: 100%;
+    border-radius: 50%;
+}
+.bigfont {
+    font-size: 130%;
+}
+.amount {
+    position: relative;
+    padding: 1em 0;
+    height: 5em;
+}
+.alabel {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 1.2em;
+    line-height: 1.2em;
+    text-align: right;
+}
+.aprice {
+    width: 62%;
+    position: absolute;
+    right: 0;
+    top: 1.4em;
+    font-size: 180%;
+}
+.message {
+    padding: .6em 1em;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 85%;
+    line-height: 1.8em;
+    margin-top: .8em;
+}
+.mlabel {
+    float: left;
+}
+.mprice {
+    float: right;
+}
+.red {
+    color: red;
+}
+.ordermess {
+    padding: .6em 1em;
+    font-size: 85%;
+    line-height: 1.8em;
+    border-bottom: 1px solid #e6e6e6;
+}
+.lcode {
+    width: 70%;
+    margin: 1.5em auto 0 auto;
+}
+.codepic {
+    width: 50%;
+    margin: 0 auto;
+}
+.codepic img {
+    width: 100%;
+}
+.codemess {
+    text-align: center;
+}
+
+.code {
+    margin-top: .8em;
+}
+.code input {
+    width: 66%;
+    height: 3em;
+    font-size: 100%;
+    line-height: 3em;
+    border: 1px solid #b6b6b6;
+    float: left;
+}
+
+.send1 {
+  background: #9b9b9b;
+  color: #fff;
+}
+
+.text {
+  border-bottom: 1px solid #e6e6e6;
+  /*padding: 1.5em 0;*/
+}
+.text p {
+  width: 80%;
+  margin: 0 auto;
+}
+.text img {
+  width: 100%;
+}
+.sign {
+  text-align: center;
+  padding: 0.8em 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+.sign.sign2 {
+  padding: 0.8em 0 2em 0;
+}
+.signpic {
+  margin: 0 auto;
+}
+.signpic2 {
+  width: 92%;
+  margin: 0 auto;
+  position: relative;
+}
+.signpic img, .signpic2 img {
+  width: 100%;
+}
+.signtext {
+  line-height: 3em;
+}
+.expire {
+  position: absolute;
+  left: 2em;
+  top: .6em;
+  font-size: 170%;
+  color: #fff;
+}
+.substract {
+  position: absolute;
+  left: 5.6em;
+  top: .5em;
+  font-size: 180%;
+  color: #fff;
+}
+.warn {
+  width: 84%;
+  left: 8%;
+  top: 7.2em;
+  position: absolute;
+  text-align: left;
+  font-size: 85%;
+  color: #fff;
+}
+.prescription {
+  position: absolute;
+  left: 8%;
+  top: 8.8em;
+  font-size: 85%;
+  color: #fff;
+}
